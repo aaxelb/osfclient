@@ -11,6 +11,9 @@ env:
   matrix:
     - DISTRIB="conda" PYTHON_VERSION="3.5" COVERAGE="false"
     - DISTRIB="conda" PYTHON_VERSION="3.6" COVERAGE="true"
+    - DISTRIB="conda" PYTHON_VERSION="3.7" COVERAGE="false"
+    - DISTRIB="conda" PYTHON_VERSION="3.8" COVERAGE="false"
+    - DISTRIB="conda" PYTHON_VERSION="3.9" COVERAGE="false"
     - DISTRIB="conda" PYTHON_VERSION="2.7" COVERAGE="false"
 
 install: source build_tools/travis_install.sh
