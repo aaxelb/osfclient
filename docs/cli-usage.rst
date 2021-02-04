@@ -8,7 +8,7 @@ The python library forms the basis for the command-line program. If you want
 programmatic access to your files use the library, otherwise try out the
 command-line program.
 
-Below some examples on how to use the command-line program:
+Below are some examples on how to use the command-line program:
 ::
 
     # getting help
@@ -17,6 +17,9 @@ Below some examples on how to use the command-line program:
 
     # list all files for a public project
     $ osf -p <projectid> list
+
+    # list all files for a public project, including guids & download urls
+    $ osf -p <projectid> list --long
 
     # setup a local folder for an existing project
     $ osf init
@@ -47,7 +50,7 @@ If you're using python 3+, you can also use the aliases `ls` in place of `list`,
 
 
 If the project is private you will need to provide authentication
-details. You can provide your OSF account name as command-line argument
+details. You can provide your OSF account name as a command-line argument
 (see the ``osf upload`` example) or set the ``OSF_USERNAME`` environment
 variable. The password will be retrieved from the ``OSF_PASSWORD``
 environment variable or asked directly by the tool.  Alternatively, you may provide a Personal
@@ -70,7 +73,7 @@ You can also define a default token by adding the ``token`` key to your ``.osfcl
 
     token = kej2R9IU6Gr2uThsswSNdP1cd0cu9eaCerVXjVf7zNwfXHyT0QzMZtX0PGTYmp9Fzaixwq
 
-After this you can simply run `osf list` to list the contents of the project.
+After this you can simply run ``osf list`` to list the contents of the project.
 
 
 .. _OSF: https://osf.io
